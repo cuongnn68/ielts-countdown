@@ -1,0 +1,8 @@
+{
+  "name": "ielts-countdown",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 3000 --directory dist"
+  }
+}
