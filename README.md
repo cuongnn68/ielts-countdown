@@ -1,6 +1,6 @@
 # IELTS countdown
 
-Static countdown to 28 November 2026 at 00:00 UTC+7. Seven curated themes rotate at midnight UTC+7. No build, db, or account required. Google Fonts are optional; local fallback fonts work offline.
+Static countdown to 26 December 2026 at 00:00 UTC+7. Seven curated themes rotate at midnight UTC+7. No build, db, or account required. Google Fonts are optional; local fallback fonts work offline.
 
 ## Run
 

@@ -1,4 +1,4 @@
-export const EXAM_TIME = Date.parse('2026-11-28T00:00:00+07:00');
+export const EXAM_TIME = Date.parse('2026-12-26T00:00:00+07:00');
 const DAY = 86_400_000;
 const OFFSET = 7 * 60 * 60 * 1000;
 
