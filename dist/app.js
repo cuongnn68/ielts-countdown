@@ -1,7 +1,9 @@
 import { getCountdown, getTheme } from './countdown.js';
+import { getQuote } from './quotes.js';
 
 const numbers = Object.fromEntries(['days', 'hours', 'minutes', 'seconds'].map(key => [key, document.getElementById(key)]));
 let currentTheme;
+let currentQuote;
 
 function render() {
   const now = Date.now();
@@ -13,6 +15,12 @@ function render() {
   document.querySelector('.countdown').hidden = countdown.finished;
   document.getElementById('exam-message').hidden = !countdown.finished;
   document.getElementById('heading').hidden = countdown.finished;
+  const quote = getQuote(now);
+  if (quote !== currentQuote) {
+    document.getElementById('quote-text').textContent = quote.text;
+    document.getElementById('quote-author').textContent = quote.author;
+    currentQuote = quote;
+  }
   const theme = getTheme(now);
   if (theme !== currentTheme) {
     for (const [key, value] of Object.entries(theme)) {
